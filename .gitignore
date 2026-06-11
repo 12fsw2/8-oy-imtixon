@@ -3,6 +3,13 @@
 /node_modules
 /build
 
+# Next.js
+frontend/.next/
+frontend/node_modules/
+
+# Production env
+.env.prod
+
 # Logs
 logs
 *.log
