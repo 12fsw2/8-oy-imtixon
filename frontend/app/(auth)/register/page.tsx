@@ -35,14 +35,14 @@ export default function RegisterPage() {
     }
   };
 
-  const fields = [
+  const fields: { key: keyof typeof form; label: string; placeholder: string; type?: string }[] = [
     { key: 'companyName', label: 'Kompaniya nomi', placeholder: 'Savdo Do\'koni' },
     { key: 'companyAddress', label: 'Manzil (ixtiyoriy)', placeholder: 'Toshkent, Chilonzor' },
     { key: 'firstName', label: 'Ism', placeholder: 'Ali' },
     { key: 'lastName', label: 'Familiya', placeholder: 'Valiyev' },
     { key: 'phone', label: 'Telefon', placeholder: '+998901234567' },
     { key: 'password', label: 'Parol', placeholder: '••••••', type: 'password' },
-  ] as const;
+  ];
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 py-8">
